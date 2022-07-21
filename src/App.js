@@ -4,7 +4,7 @@ import {OpenloginAdapter} from '@web3auth/openlogin-adapter'
 // import Web3 from 'web3'
 import './App.css'
 
-const clientId = process.env.REACT_APP_CLIENT_ID // get the clientId from https://dashboard.web3auth.io
+const clientId = process.env.REACT_APP_CLIENT_ID || '' // get the clientId from https://dashboard.web3auth.io
 
 function App() {
   const [web3auth, setWeb3auth] = useState(null)
